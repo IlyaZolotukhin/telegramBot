@@ -2,7 +2,7 @@ import { Telegraf, Markup } from 'telegraf'
 
 const token = '7303511071:AAFOX4klhjJzXPjNH2vMnSKZiw799qrmFxo'
 
-const webAppUrl ='https://angular-tg-app-67ea2.web.app/'
+const webAppUrl ='https://angular-tg-app-67ea2.web.app'
 
 const bot = new Telegraf(token)
 
@@ -12,7 +12,7 @@ ctx.reply(
     Markup.keyboard([
         Markup.button.webApp(
             'Отправить сообщение',
-            webAppUrl
+            `${webAppUrl}/feedback`
         )
     ])
 )
